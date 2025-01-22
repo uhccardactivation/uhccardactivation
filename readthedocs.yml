@@ -1,0 +1,21 @@
+version: 2
+
+# Set the type of documentation
+sphinx:
+  configuration: docs/conf.py
+
+# Build configuration
+build:
+  image: "latest"
+
+formats:
+  - html
+
+python:
+  version: "3.8"
+
+# Exclude unnecessary files or directories from the build
+exclude:
+  - .git
+  - .github
+  - node_modules
